@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w -I/home/sachss/bin -IJ:\Macro\Perl
+#!/usr/bin/perl -w -I/home/sachss/bin -IE:\Macro\Perl
 #--#!/usr/pkg/bin/perl -w -I/sdf/arpa/tz/z/zaxxon/bin
 use strict;
 #--use lib qw(~/perl5/);
@@ -7,6 +7,9 @@ use Net::IMAP::Simple;
 use Email::Simple;
 use Switch;
 use Lingua::EN::Numbers qw(num2en);
+use Cwd qw( abs_path );
+use File::Basename qw( dirname );
+use File::Spec qw( catfile );
 
 my $path = dirname(abs_path($0));
 my @arMods = (
