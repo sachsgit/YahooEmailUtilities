@@ -9,7 +9,7 @@ use Switch;
 use File::Spec;
 
 my $path  = ".";
-my $cfile = File::Spec->catfile( $path, "YahooEmail_Functions.pm" );
+my $cfile = File::Spec->catfile( $path, "lib", "YahooEmail_Functions.pm" );
 require($cfile);
 
 use constant DEBUG => FALSE;

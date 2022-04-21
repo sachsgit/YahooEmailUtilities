@@ -13,8 +13,8 @@ use File::Spec qw( catfile );
 
 my $path = dirname(abs_path($0));
 my @arMods = (
-    File::Spec->catfile($path, "MyCommonFuncs.pm"),
-    File::Spec->catfile($path, "YahooEmail_Functions.pm")
+    File::Spec->catfile($path, "lib", "MyCommonFuncs.pm"),
+    File::Spec->catfile($path, "lib", "YahooEmail_Functions.pm")
 );
 foreach my $mod ( @arMods ) {
      require ($mod);
